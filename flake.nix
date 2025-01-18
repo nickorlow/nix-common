@@ -11,7 +11,7 @@
     tmuxConf = ./tmux.conf;
     zshrcConf = ./zshrc.conf;
     commonUserConfig = {pkgs, ...}: {
-          home.packages = [ pkgs.zsh ];
+          home.packages = [ pkgs.zsh pkgs.cowsay ];
           home.stateVersion = "24.05";
 
           programs.zsh.enable = true;
